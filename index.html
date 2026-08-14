@@ -165,6 +165,19 @@
   .program-card.featured{grid-column:1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center;}
   @media (max-width:780px){ .program-card.featured{grid-template-columns:1fr;} }
 
+  /* Featured posts */
+  .posts-grid{
+    display:flex; flex-wrap:wrap; gap:24px; justify-content:center;
+  }
+  .post-embed{
+    background:var(--surface); border:1px solid var(--border); border-radius:18px;
+    padding:10px; line-height:0;
+  }
+  .post-embed iframe{
+    border-radius:10px; max-width:100%; width:504px;
+  }
+  @media (max-width:560px){ .post-embed iframe{width:100%;} }
+
   /* Field abstract band */
   .field-band{
     position:relative; padding:0; height:420px; overflow:hidden;
@@ -255,6 +268,7 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#programs">Signature Programs</a>
+      <a href="#featured">Featured Posts</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
@@ -366,6 +380,21 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="featured">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">Featured Posts</span>
+      <h2>From LinkedIn</h2>
+      <p>A few highlights from my LinkedIn — more at <a href="https://linkedin.com/in/allisonherberger" target="_blank" rel="noopener" style="color:var(--blue)">linkedin.com/in/allisonherberger</a>.</p>
+    </div>
+    <div class="posts-grid reveal">
+      <div class="post-embed">
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7348483219987517441?collapsed=1" height="542" width="504" frameborder="0" allowfullscreen title="Embedded post"></iframe>
+      </div>
     </div>
   </div>
 </section>
